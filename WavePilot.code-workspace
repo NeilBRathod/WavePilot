@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "WavePilot",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\Program Files\\Epic Games\\UE_5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "WavePilot Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilot Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilot Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Development",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Development",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilot Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Development",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Test",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Test",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilot Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Test",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilot Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilot Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilot",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilotEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilotEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"WavePilotEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"label": "WavePilotEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"WavePilotEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch WavePilot (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "WavePilot Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch WavePilot (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "WavePilot Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch WavePilot (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "WavePilot Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch WavePilot (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "WavePilot Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch WavePilot (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "WavePilot Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch WavePilotEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "WavePilotEditor Win64 Debug Build",
+				"args": [
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch WavePilotEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "WavePilotEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch WavePilotEditor (Development)",
+				"request": "launch",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "WavePilotEditor Win64 Development Build",
+				"args": [
+					"C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject"
+				],
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\Program Files\\Epic Games\\UE_5.4"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\Program Files\\Epic Games\\UE_5.4\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Users\\Neil\\Documents\\Unreal Projects\\WavePilot\\WavePilot.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\Program Files\\Epic Games\\UE_5.4"
+			}
+		]
+	}
+}
