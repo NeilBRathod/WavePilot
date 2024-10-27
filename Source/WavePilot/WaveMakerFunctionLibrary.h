@@ -18,4 +18,7 @@ class WAVEPILOT_API UWaveMakerFunctionLibrary : public UBlueprintFunctionLibrary
 
     UFUNCTION(BlueprintCallable, Category="WaveMaker")
     static float GetPawnSpeed(const AActor* Actor);
+
+	UFUNCTION(BlueprintCallable, Category="WaveMaker")
+    static float GetDistanceBetweenActors(AActor* ActorA, AActor* ActorB);
 };
